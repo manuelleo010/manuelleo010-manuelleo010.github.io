@@ -430,8 +430,9 @@ footer > div > a {
         display: flex;
         justify-content: space-evenly;
         width: 80%;
+        height: 20px;
         position: absolute;
-        top: 12%;
+        top: 14%;
         left: 9%;
         padding: 0px;
     }
