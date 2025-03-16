@@ -3,7 +3,7 @@ body{
   padding: 0;
 }
 .memeBody{
-  width: 100%;
+  width: 500px;
   height: 100vh;
   box-sizing: border-box;
  align-items: center;
@@ -32,19 +32,19 @@ background: linear-gradient(lightgreen, lightyellow);
 }
 img{
   margin-top: 22px;
-  width: 500px;
+  width: inherit;
   height: 400px;
-  object-fit: fill;
+  object-fit: cover;
 }
 @media (max-width : 768px) {
   .memeBody{
-  width: 100%;
+  width: 300;
   height: 100vh;
   }
   img{
-    width: 250px;
+    width: inherit;
     height: 350px;
-    object-fit: cover;
+    object-fit: fill;
   }
 
 
