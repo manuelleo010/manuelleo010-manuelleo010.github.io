@@ -3,6 +3,8 @@ body{
   padding: 0;
 }
 .memeBody{
+  width: 100%;
+  height: 100%;
  align-items: center;
  justify-content: center;
   display: flex;
@@ -29,13 +31,14 @@ background: linear-gradient(lightgreen, lightyellow);
 }
 img{
   margin-top: 22px;
-  width: 600px;
-  height: 500px;
+  width: 80%;
+  height: 75%;
   object-fit: fill;
 }
-@media (max-width : 572px) {
+@media (max-width : 768px) {
   img{
-    width: 500px;
+    width: 80%;
+    height: 75%;
     object-fit: cover;
   }
 
