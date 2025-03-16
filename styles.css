@@ -1,0 +1,465 @@
+body{
+    box-sizing: border-box;
+    color: white;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, black, rgb(86, 86, 179));
+}
+
+main{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 4%;
+    background-color: blueviolet;
+    margin-bottom: 4px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+section:nth-child(1){
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid mediumspringgreen;
+    margin-bottom: 1rem;
+}
+
+span:nth-child(1){
+    color: bisque;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+span:nth-child(2){
+    color: black;
+    font-size: xx-large;
+}
+
+.menu-list > ul {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    transition: all 0.3s;
+}
+.menu-list > ul > a, #contact > a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    transition: all 0.3s;
+
+}
+
+.active{
+    background-color: bisque;
+    font-size: large;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+#contact > a{
+    background-color: mediumspringgreen;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    color: white;
+
+}
+
+#contact > a:hover {
+    transform: scale(1.1);
+}
+
+.menu-list > ul > a:hover , .menu-list > ul > li:hover, #contact:hover {
+    transform: scale(1.1);
+}
+
+section:nth-child(2){
+    display: flex;
+    height: 100%;
+}
+
+.text-section {
+    width: 55%;
+    height: 100%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    line-height: 1.5;
+    
+}
+.about-section, .skills-section, .contact-section{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fallin 2s  ease-in;
+    transition: all 0.3s;
+}
+
+.contact-section > div{
+    width: 75%;
+    text-align: center;
+}
+.contact-section > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 70%;
+    color: black;
+    line-height: 1.5;
+    background-color: bisque;
+    margin-left: 2rem;
+    border-radius: 20px;
+}
+
+.contact-section > form > input{
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: .5rem;
+    font-size: large;
+}
+.contact-section > form > input:last-child {
+    width: 100px;
+    cursor: pointer;
+    background-color: mediumspringgreen;
+    color: black;
+    transition: all 0.3s;
+}
+.contact-section > form > input:last-child:hover{
+    width: 120px;
+    color: white;
+}
+.skills-section > div{
+    height: inherit;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.about-section > div{
+    height: inherit;
+    width: 30%;
+    overflow: scroll;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-section > div > p > a{
+    text-decoration: none;
+    color: mediumspringgreen;
+}
+
+.p-container{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.p-container > .proj{
+    height: 350px;
+    width: 300px;
+    margin: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.p-container > .proj > a{
+    height: inherit;
+    width: inherit;
+    box-sizing: border-box;
+}
+.p-container > .proj:hover{
+    transform: scale(1.1);
+}
+.cover-img{
+    height: 70%;
+    width: inherit;
+
+}
+.description{
+    height: 25%;
+    width: 100%;
+    background-color: mediumspringgreen;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description > a {
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    transition: all 0.3s;
+}
+.description > a:hover{
+    color: black;
+}
+.cover-img > img{
+    height: inherit;
+    width: inherit;
+}
+
+.text-section > p:nth-child(2), .text-section > p:nth-child(3){
+    animation: fallin 2s  ease-in;
+    transition: all 0.3s;
+}
+
+
+@keyframes fallin{
+    from {
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+.text-section > p:nth-child(2){
+    font-size: x-large;
+}
+#first-name{
+    color: mediumspringgreen;
+}
+
+.text-section > p:nth-child(1){
+    animation: blink 2s   infinite ease-in-out;
+    transition: all 1s;
+}
+
+@keyframes blink {
+    from  {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.img-section{
+    width: 45%;
+    height: 100%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image{
+    height: 390px;
+    width: 400px;
+    margin-top: 5rem;
+    border-radius: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px 2px black;
+}
+#image > img{
+    height: inherit;
+    width: inherit;
+    border-radius: 100%;
+}
+
+.text-section::before{
+    content: 'Hire Me...';
+    height: 100px;
+    width: 150px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: mediumspringgreen;
+    position: absolute;
+    top: 190px;
+    left: 45%;
+    z-index: 3;
+    border-radius: 100%;
+    transform: rotate3d(-1, -1, -2, 40deg);
+}
+
+
+
+
+footer{
+    width: 200px;
+    background-color: mediumspringgreen;
+    padding: 2px;
+    margin: auto;
+    display: flex;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+footer > div > a {
+    text-decoration: none;
+    color: white;
+}
+
+/*responsive*/
+@media (max-width:750px) {
+
+    body{
+        
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background: linear-gradient(180deg, black, rgb(86, 86, 179));
+    }
+    main {
+        height: 100vh;
+        width: 90%;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+    section > #name{
+        font-size:small;
+    }
+    span:nth-child(1){
+        color: bisque;
+        font-size: large;
+        font-weight: 500;
+    }
+    .menu-list > ul {
+        display: block;
+        width: 100px;
+        background-color: grey;
+        opacity: 0.7;
+        position: absolute;
+        top: 40px;
+        left: 170px;
+        border-radius: 20px;
+    }
+    .menu-list > ul > li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: inherit;
+    }
+   
+    #contact > a{
+        width: 100px;
+        margin-left: 7rem;
+    }
+    section:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .text-section {
+        width: 100%;
+        height: 40%;
+        padding-top:20%;
+        padding-bottom: 0%;
+        text-align: center; 
+    }
+    
+    #image{
+        height: 200px;
+        width: 200px;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        border-radius: 10%;
+        
+    }
+    #image > img{
+        height: inherit;
+        width: inherit;
+        border-radius: 10%;
+    }
+    .text-section::before{
+       
+        top: 450px;
+        left: 50%;
+    }
+    .about-section, .skills-section, .contact-section{
+        height: inherit;
+        width: 100%;
+        display: block;
+        
+    }
+    .about-section > div{
+        height: 40%;
+        width: 100%;
+        overflow: scroll;
+        scrollbar-width: none;
+        display: block;
+        
+    }
+    .contact-section > div{
+        width: 85%;
+        text-align:justify;
+    }
+
+    .contact-section > form{
+        width: 90%;
+        height: 60%;
+        margin-left: 1rem;
+    }
+
+}
+@media (max-width: 768px) {
+    section > #name{
+        font-size:large;
+    }
+    span:nth-child(1){
+        color: bisque;
+        font-size: large;
+        font-weight: 500;
+    }
+    .menu-list > ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        position: absolute;
+        top: 12%;
+        left: 9%;
+        padding: 0px;
+    }
+    #contact > a{
+        width: 120px;
+        margin-left: 3rem;
+    }
+    .active{
+        background-color: white;
+        font-size: large;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        color: black;
+    }
+    .text-section {
+        width: 100%;
+        height: 40%;
+        padding-top: 25%;
+        padding-bottom: 0%;
+        text-align: center; 
+    }
+    
+    section:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    }
