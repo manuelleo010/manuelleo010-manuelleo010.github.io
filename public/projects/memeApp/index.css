@@ -31,8 +31,8 @@ background: linear-gradient(lightgreen, lightyellow);
 }
 img{
   margin-top: 22px;
-  width: 80%;
-  height: 75%;
+  width: 400px;
+  height: 300px;
   object-fit: fill;
 }
 @media (max-width : 768px) {
