@@ -34,7 +34,7 @@ img{
   margin-top: 22px;
   width: inherit;
   height: 400px;
-  object-fit: cover;
+  object-fit: fill;
 }
 @media (max-width : 768px) {
   .memeBody{
