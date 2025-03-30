@@ -281,25 +281,6 @@ section:nth-child(2){
     border-radius: 100%;
 }
 
-.text-section::before{
-    content: 'Hire Me...';
-    height: 100px;
-    width: 150px;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: mediumspringgreen;
-    position: absolute;
-    top: 190px;
-    left: 45%;
-    z-index: 3;
-    border-radius: 100%;
-    transform: rotate3d(-1, -1, -2, 40deg);
-}
-
-
-
 
 footer{
     width: 200px;
@@ -386,11 +367,7 @@ footer > div > a {
         width: inherit;
         border-radius: 10%;
     }
-    .text-section::before{
-       
-        top: 450px;
-        left: 50%;
-    }
+    
     .about-section, .skills-section, .contact-section{
         height: inherit;
         width: 100%;
