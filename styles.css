@@ -169,7 +169,7 @@ section:nth-child(2){
 }
 
 .p-container{
-    height: inherit;
+    height: 100vh;
     width: inherit;
     display: flex;
     flex-wrap: wrap;
