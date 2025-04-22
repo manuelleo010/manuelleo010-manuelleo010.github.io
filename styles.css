@@ -174,11 +174,11 @@ section:nth-child(2){
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
 }
 
 .p-container > .proj{
-    height: 350px;
+    height: 300px;
     width: 300px;
     margin: 1px;
     box-sizing: border-box;
@@ -261,7 +261,7 @@ section:nth-child(2){
 .img-section{
     width: 45%;
     height: 100%;
-    padding: 3%;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,7 +269,7 @@ section:nth-child(2){
 #image{
     height: 390px;
     width: 400px;
-    margin-top: 5rem;
+    margin-top: 1rem;
     border-radius: 100%;
     box-sizing: border-box;
     object-fit: cover;
