@@ -180,7 +180,7 @@ section:nth-child(2){
 .p-container > .proj{
     height: 350px;
     width: 300px;
-    margin: 2px;
+    margin: 1px;
     box-sizing: border-box;
     cursor: pointer;
     transition: all 0.3s;
@@ -199,7 +199,7 @@ section:nth-child(2){
 
 }
 .description{
-    height: 25%;
+    height: 10%;
     width: 100%;
     background-color: mediumspringgreen;
     border-radius: 20px;
@@ -211,7 +211,7 @@ section:nth-child(2){
 .description > a {
     color: white;
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
     transition: all 0.3s;
 }
 .description > a:hover{
